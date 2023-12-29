@@ -1,4 +1,4 @@
-# https://github.com/docker-library/official-images/pull/13556#issuecomment-1319181339 🙈
+# https://github.com/khulnasoft/docker-images/pull/13556#issuecomment-1319181339 🙈
 name: 'Shared Bashbrew Action'
 description: 'Install the same version of Bashbrew consistently in all other GitHub Actions'
 inputs:

@@ -1,0 +1,116 @@
+# this file is generated via https://github.com/nodejs/docker-node/blob/a090a371cd07499b50c077335d2f004083a55ae4/stackbrew.js
+
+Maintainers: The Node.js Docker Team <https://github.com/nodejs/docker-node> (@nodejs)
+GitRepo: https://github.com/nodejs/docker-node.git
+GitFetch: refs/heads/main
+
+Tags: 21-alpine3.18, 21.5-alpine3.18, 21.5.0-alpine3.18, alpine3.18, current-alpine3.18
+Architectures: amd64, arm32v6, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 9ee59bf646e8be3ff6ae849e8119312f198be55c
+Directory: 21/alpine3.18
+
+Tags: 21-alpine, 21-alpine3.19, 21.5-alpine, 21.5-alpine3.19, 21.5.0-alpine, 21.5.0-alpine3.19, alpine, alpine3.19, current-alpine, current-alpine3.19
+Architectures: amd64, arm32v6, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 9ee59bf646e8be3ff6ae849e8119312f198be55c
+Directory: 21/alpine3.19
+
+Tags: 21, 21-bookworm, 21.5, 21.5-bookworm, 21.5.0, 21.5.0-bookworm, bookworm, current, current-bookworm, latest
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 9ee59bf646e8be3ff6ae849e8119312f198be55c
+Directory: 21/bookworm
+
+Tags: 21-bookworm-slim, 21-slim, 21.5-bookworm-slim, 21.5-slim, 21.5.0-bookworm-slim, 21.5.0-slim, bookworm-slim, current-bookworm-slim, current-slim, slim
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 9ee59bf646e8be3ff6ae849e8119312f198be55c
+Directory: 21/bookworm-slim
+
+Tags: 21-bullseye, 21.5-bullseye, 21.5.0-bullseye, bullseye, current-bullseye
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 9ee59bf646e8be3ff6ae849e8119312f198be55c
+Directory: 21/bullseye
+
+Tags: 21-bullseye-slim, 21.5-bullseye-slim, 21.5.0-bullseye-slim, bullseye-slim, current-bullseye-slim
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 9ee59bf646e8be3ff6ae849e8119312f198be55c
+Directory: 21/bullseye-slim
+
+Tags: 20-alpine3.18, 20.10-alpine3.18, 20.10.0-alpine3.18, iron-alpine3.18, lts-alpine3.18
+Architectures: amd64, arm32v6, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: b98d3851de95667630dba35299898eeae1dd30e6
+Directory: 20/alpine3.18
+
+Tags: 20-alpine, 20-alpine3.19, 20.10-alpine, 20.10-alpine3.19, 20.10.0-alpine, 20.10.0-alpine3.19, iron-alpine, iron-alpine3.19, lts-alpine, lts-alpine3.19
+Architectures: amd64, arm32v6, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 5bb305299145aa996bd3e0a701e5a3c3d587ad82
+Directory: 20/alpine3.19
+
+Tags: 20, 20-bookworm, 20.10, 20.10-bookworm, 20.10.0, 20.10.0-bookworm, iron, iron-bookworm, lts, lts-bookworm, lts-iron
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: b98d3851de95667630dba35299898eeae1dd30e6
+Directory: 20/bookworm
+
+Tags: 20-bookworm-slim, 20-slim, 20.10-bookworm-slim, 20.10-slim, 20.10.0-bookworm-slim, 20.10.0-slim, iron-bookworm-slim, iron-slim, lts-bookworm-slim, lts-slim
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: b98d3851de95667630dba35299898eeae1dd30e6
+Directory: 20/bookworm-slim
+
+Tags: 20-bullseye, 20.10-bullseye, 20.10.0-bullseye, iron-bullseye, lts-bullseye
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: b98d3851de95667630dba35299898eeae1dd30e6
+Directory: 20/bullseye
+
+Tags: 20-bullseye-slim, 20.10-bullseye-slim, 20.10.0-bullseye-slim, iron-bullseye-slim, lts-bullseye-slim
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: b98d3851de95667630dba35299898eeae1dd30e6
+Directory: 20/bullseye-slim
+
+Tags: 20-buster, 20.10-buster, 20.10.0-buster, iron-buster, lts-buster
+Architectures: amd64, arm32v7, arm64v8
+GitCommit: b98d3851de95667630dba35299898eeae1dd30e6
+Directory: 20/buster
+
+Tags: 20-buster-slim, 20.10-buster-slim, 20.10.0-buster-slim, iron-buster-slim, lts-buster-slim
+Architectures: amd64, arm32v7, arm64v8
+GitCommit: b98d3851de95667630dba35299898eeae1dd30e6
+Directory: 20/buster-slim
+
+Tags: 18-alpine3.18, 18.19-alpine3.18, 18.19.0-alpine3.18, hydrogen-alpine3.18
+Architectures: amd64, arm32v6, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: f416b53801a9d49d6ce6b2c038c8bc9ed93625dd
+Directory: 18/alpine3.18
+
+Tags: 18-alpine, 18-alpine3.19, 18.19-alpine, 18.19-alpine3.19, 18.19.0-alpine, 18.19.0-alpine3.19, hydrogen-alpine, hydrogen-alpine3.19
+Architectures: amd64, arm32v6, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 5bb305299145aa996bd3e0a701e5a3c3d587ad82
+Directory: 18/alpine3.19
+
+Tags: 18, 18-bookworm, 18.19, 18.19-bookworm, 18.19.0, 18.19.0-bookworm, hydrogen, hydrogen-bookworm
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: f416b53801a9d49d6ce6b2c038c8bc9ed93625dd
+Directory: 18/bookworm
+
+Tags: 18-bookworm-slim, 18-slim, 18.19-bookworm-slim, 18.19-slim, 18.19.0-bookworm-slim, 18.19.0-slim, hydrogen-bookworm-slim, hydrogen-slim
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: f416b53801a9d49d6ce6b2c038c8bc9ed93625dd
+Directory: 18/bookworm-slim
+
+Tags: 18-bullseye, 18.19-bullseye, 18.19.0-bullseye, hydrogen-bullseye
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: f416b53801a9d49d6ce6b2c038c8bc9ed93625dd
+Directory: 18/bullseye
+
+Tags: 18-bullseye-slim, 18.19-bullseye-slim, 18.19.0-bullseye-slim, hydrogen-bullseye-slim
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: f416b53801a9d49d6ce6b2c038c8bc9ed93625dd
+Directory: 18/bullseye-slim
+
+Tags: 18-buster, 18.19-buster, 18.19.0-buster, hydrogen-buster
+Architectures: amd64, arm32v7, arm64v8
+GitCommit: f416b53801a9d49d6ce6b2c038c8bc9ed93625dd
+Directory: 18/buster
+
+Tags: 18-buster-slim, 18.19-buster-slim, 18.19.0-buster-slim, hydrogen-buster-slim
+Architectures: amd64, arm32v7, arm64v8
+GitCommit: f416b53801a9d49d6ce6b2c038c8bc9ed93625dd
+Directory: 18/buster-slim
+

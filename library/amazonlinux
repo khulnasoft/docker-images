@@ -1,0 +1,33 @@
+Maintainers: Amazon Linux <amazon-linux@amazon.com> (@amazonlinux),
+             Frédérick Lefebvre (@fred-lefebvre),
+             Stewart Smith (@stewartsmith),
+             Christopher Miller (@mysteriouspants),
+             Sumit Tomer (@sktomer),
+             Tanu Rampal (@trampal),
+             Sam Thornton (@mrthornazon),
+             Preston Carpenter (@timidger),
+             Joseph Howell-Burke (@jhowell-burke),
+             Miriam Clark (@mgclark001),
+             Ade Adetayo (@dadetayo),
+             Colin McCoy (@cmccoypdx)
+GitRepo: https://github.com/amazonlinux/container-images.git
+GitCommit: cc7a1876866f4056fa73a789a5b758358151c189
+
+Tags: 2023, latest, 2023.3.20231218.0
+Architectures: amd64, arm64v8
+amd64-GitFetch: refs/heads/al2023
+amd64-GitCommit: b873d5675468bf092eb887e9ff01d72625a13945
+arm64v8-GitFetch: refs/heads/al2023-arm64
+arm64v8-GitCommit: 99620d2242c57d3e03eaa76c0dfd21d6e04eeee3
+
+Tags: 2, 2.0.20231218.0
+Architectures: amd64, arm64v8
+amd64-GitFetch: refs/heads/amzn2
+amd64-GitCommit: a062c0d5722a2c85f82df96a01a5a21a15adff7d
+arm64v8-GitFetch: refs/heads/amzn2-arm64
+arm64v8-GitCommit: ccf6d7de3dc21508efe0a045b88e1c5cac598410
+
+Tags: 1, 2018.03, 2018.03.0.20231218.0
+Architectures: amd64
+amd64-GitFetch: refs/heads/2018.03
+amd64-GitCommit: 21ffab08ccd83dc317d0607e94ad0f9a63590a60

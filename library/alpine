@@ -1,0 +1,64 @@
+Maintainers: Natanael Copa <ncopa@alpinelinux.org> (@ncopa)
+GitRepo: https://github.com/alpinelinux/docker-alpine.git
+
+Tags: 20231219, edge
+Architectures: arm64v8, arm32v6, arm32v7, ppc64le, riscv64, s390x, i386, amd64
+GitFetch: refs/heads/edge
+GitCommit: 8890ee9d240b5646608ea8810923ec686d578a00
+arm64v8-Directory: aarch64/
+arm32v6-Directory: armhf/
+arm32v7-Directory: armv7/
+ppc64le-Directory: ppc64le/
+riscv64-Directory: riscv64/
+s390x-Directory: s390x/
+i386-Directory: x86/
+amd64-Directory: x86_64/
+
+Tags: 3.19.0, 3.19, 3, latest
+Architectures: arm64v8, arm32v6, arm32v7, ppc64le, s390x, i386, amd64
+GitFetch: refs/heads/v3.19
+GitCommit: 97c57449282d97cfa1c0b64669aed9afbf08645a
+arm64v8-Directory: aarch64/
+arm32v6-Directory: armhf/
+arm32v7-Directory: armv7/
+ppc64le-Directory: ppc64le/
+s390x-Directory: s390x/
+i386-Directory: x86/
+amd64-Directory: x86_64/
+
+Tags: 3.18.5, 3.18
+Architectures: arm64v8, arm32v6, arm32v7, ppc64le, s390x, i386, amd64
+GitFetch: refs/heads/v3.18
+GitCommit: a83fe3481a89201ac736f735062360f5953be635
+arm64v8-Directory: aarch64/
+arm32v6-Directory: armhf/
+arm32v7-Directory: armv7/
+ppc64le-Directory: ppc64le/
+s390x-Directory: s390x/
+i386-Directory: x86/
+amd64-Directory: x86_64/
+
+Tags: 3.17.6, 3.17
+Architectures: arm64v8, arm32v6, arm32v7, ppc64le, s390x, i386, amd64
+GitFetch: refs/heads/v3.17
+GitCommit: 4de8583a90c86e251755f4bae4080f86e2449df8
+arm64v8-Directory: aarch64/
+arm32v6-Directory: armhf/
+arm32v7-Directory: armv7/
+ppc64le-Directory: ppc64le/
+s390x-Directory: s390x/
+i386-Directory: x86/
+amd64-Directory: x86_64/
+
+Tags: 3.16.8, 3.16
+Architectures: arm64v8, arm32v6, arm32v7, ppc64le, s390x, i386, amd64
+GitFetch: refs/heads/v3.16
+GitCommit: 6e630a20c86d1d0e5987681e02ed6de64ecbbf37
+arm64v8-Directory: aarch64/
+arm32v6-Directory: armhf/
+arm32v7-Directory: armv7/
+ppc64le-Directory: ppc64le/
+s390x-Directory: s390x/
+i386-Directory: x86/
+amd64-Directory: x86_64/
+
