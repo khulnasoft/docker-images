@@ -1,5 +1,5 @@
-# FYI, this base image is built via ".github/workflows/.bashbrew/action.yml" (from https://github.com/docker-library/bashbrew/tree/master/Dockerfile)
-FROM oisupport/bashbrew:base
+# FYI, this base image is built via ".github/workflows/.bashbrew/action.yml" (from https://github.com/khulnasoft/bashbrew/tree/master/Dockerfile)
+FROM khulnasoft/bashbrew:latest
 
 RUN set -eux; \
 	apt-get update; \
@@ -18,7 +18,7 @@ RUN set -eux; \
 	; \
 	rm -rf /var/lib/apt/lists/*
 
-ENV DIR /usr/src/official-images
+ENV DIR /usr/src/docker-images
 ENV BASHBREW_LIBRARY $DIR/library
 
 # crane for diff-pr.sh

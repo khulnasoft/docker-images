@@ -23,14 +23,14 @@ for repo; do
 		| ([ .meta.entries[].tags[0] ]) as $tags
 		| .name = ($tags | join(", "))
 		# replace "build" steps with something that uses "bashbrew" instead of "docker build"
-		# https://github.com/docker-library/bashbrew/blob/20b5a50a4eafee1e92fadca5f9cbbce6b16d80b1/scripts/github-actions/generate.sh#L79-L105
+		# https://github.com/khulnasoft/bashbrew/blob/20b5a50a4eafee1e92fadca5f9cbbce6b16d80b1/scripts/github-actions/generate.sh#L79-L105
 		| .runs.build = (
 			(if .os | startswith("windows-") then "export BASHBREW_ARCH=windows-amd64 BASHBREW_CONSTRAINTS=" + ([ .meta.entries[].constraints[] ] | join(", ") | @sh) + "\n" else "" end)
 			+ "export BASHBREW_LIBRARY=\"$PWD/library\"\n"
 			+ ([ $tags[] | "bashbrew build " + @sh ] | join("\n"))
 		)
-		# use our local clone of official-images for running tests (so test changes can be tested too, if they live in the PR with the image change)
-		# https://github.com/docker-library/bashbrew/blob/a40a54d4d81b9fd2e39b4d7ba3fe203e8b022a67/scripts/github-actions/generate.sh#L95
+		# use our local clone of docker-images for running tests (so test changes can be tested too, if they live in the PR with the image change)
+		# https://github.com/khulnasoft/bashbrew/blob/a40a54d4d81b9fd2e39b4d7ba3fe203e8b022a67/scripts/github-actions/generate.sh#L95
 		| .runs.test |= gsub("[^\n\t ]+/run[.]sh "; "./test/run.sh ")
 	]' <<<"$newStrategy")"
 	jq -c . <<<"$newStrategy" > /dev/null # sanity check

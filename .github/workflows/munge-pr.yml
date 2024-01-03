@@ -12,7 +12,7 @@ defaults:
     shell: 'bash -Eeuo pipefail -x {0}'
 
 env:
-  # https://github.com/docker-library/bashbrew/issues/10
+  # https://github.com/khulnasoft/bashbrew/issues/10
   GIT_LFS_SKIP_SMUDGE: 1
 
 jobs:
@@ -119,7 +119,7 @@ jobs:
       - name: Prepare Environment
         run: |
           # this avoids running repo-local scripts (to avoid CVE-2020-15228 via the scripts being updated to write nasty things to $GITHUB_ENV)
-          docker build --tag oisupport/bashbrew:diff-pr .
+          docker build --tag khulnasoft/bashbrew:diff-pr .
       - name: Gather Maintainers
         env:
           IMAGES: ${{ needs.gather.outputs.images }}
@@ -128,7 +128,7 @@ jobs:
           eval "set -- $files"
           for f; do
             if [ -s "$f" ]; then
-              docker run --rm --read-only --tmpfs /tmp oisupport/bashbrew:diff-pr \
+              docker run --rm --read-only --tmpfs /tmp khulnasoft/bashbrew:diff-pr \
                 bashbrew cat --format '  - `{{ $.RepoName }}`:{{ range .Manifest.Global.Maintainers }} @{{ .Handle }}{{ end }}' "$f"
             fi
           done | tee "$GITHUB_WORKSPACE/oi-pr.maint"
@@ -136,7 +136,7 @@ jobs:
         env:
           GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
-          docker run --rm --read-only --tmpfs /tmp oisupport/bashbrew:diff-pr ./diff-pr.sh "$GITHUB_PR_NUMBER" | tee "$GITHUB_WORKSPACE/oi-pr.diff"
+          docker run --rm --read-only --tmpfs /tmp khulnasoft/bashbrew:diff-pr ./diff-pr.sh "$GITHUB_PR_NUMBER" | tee "$GITHUB_WORKSPACE/oi-pr.diff"
       - name: Comment
         uses: actions/github-script@v6
         with:

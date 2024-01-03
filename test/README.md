@@ -196,5 +196,5 @@ imageTests+=(
 **Note**: If you do use your own config file, the `config.sh` included here will no longer be loaded by default. If you want to load it in addition to your own config file (for example, to run the `globalTests` against your own image), use an additional `--config` flag.
 
 ```console
-$ /path/to/official-images/test/run.sh --config /path/to/official-images/test/config.sh --config ./my-config.sh myimage
+$ /path/to/docker-images/test/run.sh --config /path/to/docker-images/test/config.sh --config ./my-config.sh myimage
 ```
